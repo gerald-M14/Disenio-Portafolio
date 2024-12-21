@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/styles-principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Caprasimo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@200;300&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+<title>Sobre mi</title>
+</head>
+<body>
+    
+    <!-- contenido principal -->
+        <div class="layout">
+            <!-- barra lateral (info de usuario) -->
+            <aside class="layout__aside">
+                <section class="aside__user-info">
+                    <!-- informacion general -->
+                    <div class="user-info__general">
+                        <div class="user-info__container-imagen">
+                            <img src="assets/img/default-user.png" alt="foto" class="user-info__image">
+                        </div>
+                    </div>
+
+                    <h2 class="user-info__name">
+                        Geraldhy Messú
+                    </h2>
+                    <h4 class="user-info__job">Desarrolladora FullStack</h4>
+
+                    <!-- menu de navegacion -->
+                    <nav class="layout__menu">
+                        <ul class="menu__list">
+
+                            <li class="menu__option">
+                                <a href="index.html" class="menu__link ">
+                                    <i class="fa-solid fa-house menu__icon"></i>
+                                    <span class="menu__overlay">Home</span>
+                                </a>
+                            </li>
+
+                            <li class="menu__option">
+                                <a href="sobre-mi.html" class="menu__link ">
+                                    <i class="fa-solid fa-user menu__icon"></i>
+                                    <span class="menu__overlay">Sobre mí</span>
+                                </a>
+                            </li>
+
+                            <li class="menu__option">
+                                <a href="curriculum.html" class="menu__link ">
+                                    <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                                    <span class="menu__overlay">Curriculum</span>
+                                </a>
+                            </li>
+
+                            <li class="menu__option">
+                                <a href="portafolio.html" class="menu__link ">
+                                    <i class="fa-solid fa-briefcase menu__icon"></i>
+                                    <span class="menu__overlay">Portafolio</span>
+                                </a>
+                            </li>
+
+                            <li class="menu__option">
+                                <a href="blog.html" class="menu__link menu__link--active">
+                                    <i class="fa-solid fa-book menu__icon"></i>
+                                    <span class="menu__overlay">Blog</span>
+                                </a>
+                            </li>
+
+                            <li class="menu__option">
+                                <a href="contacto.html" class="menu__link ">
+                                    <i class="fa-solid fa-envelope menu__icon"></i>
+                                    <span class="menu__overlay">Contacto</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    
+                    <!-- link o redes -->
+                    <div class="user-info__links">
+                        <ul class="links__social">
+                            <li class="social__option">
+                                <a href="#" class="social__link">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+
+                            <li class="social__option">
+                                <a href="#" class="social__link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+
+                            <li class="social__option">
+                                <a href="#" class="social__link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- boton del curriculum -->
+                    <div class="user-info__buttons">
+                        <a href="#" class="user-info__btn">Descargar DV</a>
+                    </div>
+
+                    <!-- footer -->
+                    <footer class="user-info__footer">
+                        &copy; 2024 Geraldhy Messú
+                    </footer>
+                </section>
+            </aside>
+
+            <!-- contenido principal -->
+            <main class="layout__content">
+                <section class="content__page content__blog">
+                    <header class="blog__header">
+                        <h1 class="blog__title">Blog</h1>
+                    </header>
+                    
+                    <section class="blog__articles">
+                        <article class="articles__article">
+                            <div class="article__top">
+                                <div class="article__category">Desarrollo</div>
+                                <a href="#" class="article__image-link">
+                                    <div class="article__mask">
+                                        <img src="assets/img/articulo-1.jpg" alt="Articulo" class="article__image">
+                                    </div>
+                                    <div class="article__logo">
+                                        <i class="fa-solid fa-book article__icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article__bottom">
+                                <time datetime="2024-08-30" class="article__date">30/08/2024</time>
+                                <a href="#" class="article__link">
+                                    <h2 class="article__title">Como aprender a programar en 2025</h2>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="articles__article">
+                            <div class="article__top">
+                                <div class="article__category">Desarrollo</div>
+                                <a href="#" class="article__image-link">
+                                    <div class="article__mask">
+                                        <img src="assets/img/articulo-2.jpg" alt="Articulo" class="article__image">
+                                    </div>
+                                    <div class="article__logo">
+                                        <i class="fa-solid fa-book article__icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article__bottom">
+                                <time datetime="2024-05-20" class="article__date">20/05/2024</time>
+                                <a href="#" class="article__link">
+                                    <h2 class="article__title">Como hacer animaciones en css</h2>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="articles__article">
+                            <div class="article__top">
+                                <div class="article__category">Desarrollo</div>
+                                <a href="#" class="article__image-link">
+                                    <div class="article__mask">
+                                        <img src="assets/img/articulo-3.jpg" alt="Articulo" class="article__image">
+                                    </div>
+                                    <div class="article__logo">
+                                        <i class="fa-solid fa-book article__icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article__bottom">
+                                <time datetime="2024-02-15" class="article__date">15/02/2024</time>
+                                <a href="#" class="article__link">
+                                    <h2 class="article__title">Como insertar un link en html</h2>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="articles__article">
+                            <div class="article__top">
+                                <div class="article__category">UI</div>
+                                <a href="#" class="article__image-link">
+                                    <div class="article__mask">
+                                        <img src="assets/img/articulo-4.jpg" alt="Articulo" class="article__image">
+                                    </div>
+                                    <div class="article__logo">
+                                        <i class="fa-solid fa-book article__icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article__bottom">
+                                <time datetime="2024-09-25" class="article__date">25/09/2024</time>
+                                <a href="#" class="article__link">
+                                    <h2 class="article__title">Como diseñar en figma</h2>
+                                </a>
+
+                            </div>
+
+                        </article>
+                    </section>
+
+
+                </section>
+            </main>
+            
+        </div>
+
+</body>
+</html>

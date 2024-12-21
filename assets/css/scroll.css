@@ -1,0 +1,77 @@
+:root{
+    --color-scrollbar:#D3D3D4;
+    --color-background-scroll:#eee;
+    --color-secundary: #a70e4e;
+    --color-principal: #FFFFFF;
+}
+
+/* Estilos específicos para Firefox */
+@-moz-document url-prefix() {
+    .content__page {
+        scrollbar-width: thin; /* Más delgada */
+        scrollbar-color: var(--color-scrollbar) transparent; /* Color clickeable y el fondo */
+    }
+    .layout__aside{
+        scrollbar-width: thin; /* Más delgada */
+        scrollbar-color: var(--color-scrollbar) var(--color-secundary); /* Color clickeable y el fondo */
+    }
+}
+
+/*scroll para chrome*/
+.content__page::-webkit-scrollbar{
+
+    width: 25px;
+    background: transparent;
+
+}
+
+.content__page::-webkit-scrollbar-thumb{
+    /*es lo que clicleas y mueves*/
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.content__page:hover::-webkit-scrollbar-thumb{ /*es lo que cñoqueas y mueves*/
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover{ /*es lo que cñoqueas y mueves*/
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secundary);
+}
+
+.content__page::-webkit-scrollbar-track{ /*es toda la barra*/
+    margin: 40px 0
+
+}
+
+/*scrollbar para el aside en chrome*/
+.layout__aside::-webkit-scrollbar{
+
+    width: 25px;
+    background: var(--color-secundary);
+
+}
+
+.layout__aside::-webkit-scrollbar-thumb{
+    /*es lo que clicleas y mueves*/
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb{ /*es lo que cñoqueas y mueves*/
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb:hover{ /*es lo que cñoqueas y mueves*/
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+
+.layout__aside::-webkit-scrollbar-track{ /*es toda la barra*/
+    margin: 40px 0
+
+}
+
