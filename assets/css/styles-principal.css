@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5,h6{
 /*imagen de fondo*/
 body{
     background-color: rgb(245, 200, 211);
-    background-image: url("/maquetacion-web/assets/img/fondo.png");
+    background-image: url("/assets/img/fondo.png");
     background-size: cover;
     overflow: hidden; /*para no hacer scrooll*/
     background-repeat: no-repeat;
@@ -648,9 +648,6 @@ body{
     transition: all 300ms ease-in-out;
 }
 
-.extra__info:hover{
-    transform: translateY(-5px);
-}
 
 .extra__icon{
     font-size: 3.3rem;
@@ -1195,20 +1192,20 @@ padding: 0 1.5rem;
     color: var(--color-secundary); 
 }
 
-/* Campo inválido: borde rojo */
+/* Campo inválido */
 .input__email:invalid {
     border-color: #ff9797;
     background-color: #fccccc;
 }
 
 
-/* Campo válido: borde normal y fondo verde claro */
+/* Campo válido */
 .input__email:valid {
     border-color: var(--color-secundary);
     background-color: #bdffbd; /* Fondo verde claro */
 }
 
-/* Campo vacío: borde normal y fondo transparente */
+/* Campo vacío */
 .input__email:placeholder-shown {
     border-color: var(--color-border-reviews);
     background-color: transparent; /* Fondo transparente */
@@ -1242,3 +1239,4 @@ padding: 0 1.5rem;
     width: 100%;
     height: 14rem;
 }
+
